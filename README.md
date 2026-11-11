@@ -160,20 +160,15 @@ Open `dashboard/Ecommerce_Analytics_Dashboard.pbix` in Power BI Desktop to explo
 6. Power BI dashboard creation
 7. Documentation and GitHub publication
 
-## Notes and Limitations
+## Methodology
 
-- The analysis distinguishes product transactions from non-product transactions.
-- Some transactions have missing customer identifiers; customer-level findings use identifiable customers only.
-- Duplicate records were assessed but retained because their business meaning could not be conclusively determined.
-- December 2010 contains only partial-month data and is excluded from the January–November 2010 monthly trend chart.
-- The analyzed dataset does not support a separate cancellation and returns analysis.
+The analysis was conducted using Python and Pandas for data preparation and exploratory analysis, followed by SQL queries in PostgreSQL to examine sales, product performance, and customer behavior.
 
-## Project Status
+Power BI was used to develop an interactive dashboard, with DAX measures supporting revenue calculations, customer segmentation, and average order value analysis.
 
-- [x] Data exploration and preparation
-- [x] Python analysis and visualizations
-- [x] PostgreSQL and SQL analysis
-- [x] Power BI dashboard
-- [x] Key findings documentation
-- [ ] Final repository verification
-- [ ] GitHub publication
+## Limitations
+
+- Customer-level analysis excludes transactions without a customer identifier.
+- Potential duplicate records were retained because their business meaning could not be reliably verified.
+- December 2010 was excluded from the monthly trend visualization because the available data covers only part of the month.
+- Cancellation and return patterns were not analyzed separately.
