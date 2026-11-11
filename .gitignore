@@ -224,3 +224,15 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Power BI temporary files
+*.pbit.tmp
+*.pbix.tmp
+
+# Windows temporary files
+Thumbs.db
+Desktop.ini
+
+# Local environment variables
+.env.*
+!.env.example
